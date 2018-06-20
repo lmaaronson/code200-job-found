@@ -1,0 +1,74 @@
+.main {
+    width: 50%;
+    margin: auto;
+}
+
+.jobLink {
+    width:100%;
+}
+
+.moreInfo {
+    width:100%;
+}
+.saveJob {
+    width:100%;
+}
+.navi-item {
+    width:33%;
+    float:left;
+    text-align: center;
+    font-size: 1.5em;
+    background-color:lightgreen;
+}
+.navi {
+    width:101%;
+}
+
+.listing {
+    border-style: solid;
+    border-color: gray;
+    border-width: 1px;
+    margin: 8px;
+    padding: 8px;
+}
+
+.loadingImg {
+    width:100%;
+    height:auto;
+}
+
+.expanded {
+    height:auto;
+    overflow-x: scroll;
+    display:inline-block;
+}
+
+.collapsed {
+    width:100%;
+    height:200px;
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+
+.searchField {
+    right:10%;
+    left:10%;
+    position: absolute;
+}
+
+.submitSearch {
+    width: 10%;
+    position: absolute;
+    right: 10%;
+}
+
+/* .fadeout {
+    background: linear-gradient(
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 1) 100%
+    );
+    height:32px;
+    position:relative;
+    width: 100%;
+    bottom: 16px;
+}  */
