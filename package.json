@@ -8,7 +8,7 @@
     "server": "node server.js",
     "client": "node scripts/start-client.js",
     "start": "concurrently \"nodemon server.js\" \"npm run client\"",
-    "build": "node scripts/build.js",
+    "build": "concurrently \"react-scripts build\" \"node scripts/build.js\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
