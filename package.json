@@ -2,20 +2,14 @@
   "name": "200jobfound",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "server.js",
   "homepage": "https://code200-job-found.herokuapp.com/",
   "scripts": {
     "server": "node server.js",
     "client": "node scripts/start-client.js",
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "postinstall": "react-scripts build"
-  },
-  "engines": {
-    "node": "~6.10.3",
-    "npm": "~5.6.0"
+    "start": "concurrently \"nodemon server.js\" \"npm run client\"",
+    "build": "concurrently \"react-scripts build\" \"node scripts/build.js\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
@@ -34,8 +28,6 @@
     "path": "^0.12.7",
     "react": "^16.4.1",
     "react-expand-collapse": "^0.2.0",
-    "react-dom": "^16.2.0",
-    "react-scripts": "1.1.1",
     "react-router-dom": "^4.3.1",
     "sequelize": "^4.37.8"
   }
